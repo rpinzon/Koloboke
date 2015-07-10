@@ -17,6 +17,9 @@
 
 package net.openhft.koloboke.collect;
 
+import java.io.Serializable;
+
+
 /**
  * The root interface of all collections within the library.
  *
@@ -38,7 +41,7 @@ package net.openhft.koloboke.collect;
  *   <tr><td>{@link #clear()}</td>             <td>✓</td><td>✓</td><td>-</td></tr>
  * </table>
  */
-public interface Container {
+public interface Container extends Serializable {
 
     /**
      * Returns the number of elements (entries) in this container. If this container contains more
